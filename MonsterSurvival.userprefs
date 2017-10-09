@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\cleaver.cs">
+    <Files>
+      <File FileName="Assets\scripts\player.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\monster.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\boss.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\gameplayCanvas.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\cleaver.cs" Line="14" Column="5" />
+      <File FileName="Assets\scripts\CurrentHealthBar.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Shoot.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
