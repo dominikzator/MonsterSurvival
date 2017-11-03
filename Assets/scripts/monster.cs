@@ -236,17 +236,23 @@ public class monster : MonoBehaviour {
         nav.Stop();
     }
 
+	public void LoseLife ()
+	{
+		currentLife--;
+		lifeWidth = currentLife / maxlife;
+		currentHealthBar.GetComponent<Transform> ().localScale = new Vector3 (lifeWidth, 0.05f, 0.01f);
+		Debug.Log ("Monster got hit");
+	}
+
 	public void OnCollisionEnter(Collision col)
 	{
+		//Debug.Log ("Monster got hit");
 		if (alive) {
 			if ((col.gameObject.name == "cleaver" || 
 				col.gameObject.name == "cleaver(Clone)") && col.gameObject.GetComponent<cleaver>().charges == 1) 
 			{
-				currentLife--;
-				lifeWidth = currentLife / maxlife;
-				currentHealthBar.GetComponent<Transform> ().localScale = new Vector3 (lifeWidth, 0.05f, 0.01f);
+				LoseLife ();
 				col.gameObject.GetComponent<cleaver> ().charges--;
-				//state = "chase";
 			}
 		}
 
